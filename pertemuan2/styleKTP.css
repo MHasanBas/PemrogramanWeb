@@ -1,0 +1,32 @@
+.content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: inter;
+    margin-left: 5;
+}
+table {
+    height: 430px;
+    padding: 1;
+    width: 850px;
+    margin-top: 78px;
+    border: 0px solid;
+    border-radius: 1em;
+    background-image:url(latar.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15px;
+    padding-right: 10px;;
+}
+.img {
+    padding-left: 10px;
+    height: 230px;
+    width: 170px;
+
+}
+
+
+td{
+    padding-left: 17px;
+
+}
