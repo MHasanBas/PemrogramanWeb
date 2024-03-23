@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mengimpor stylesheet untuk mengatur tampilan -->
+    <link rel="stylesheet" type="text/css" href="styleSlide.css"/>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Event handler saat elemen dengan ID "flip" diklik
+        $("#flip").click(function() {
+            // Memulai efek slide down pada elemen dengan ID "kotak2"
+            $("#kotak2").slideDown("slow");
+        });
+    });
+    </script>
+</head>
+<body>
+<!-- Elemen untuk memicu efek slide -->
+<div id="flip">Klik untuk Efek Slide</div>
+<!-- Elemen yang akan mengalami efek slide -->
+<div id="kotak2" style="display: none;">Selamat Pagi</div>
+</body>
+</html>

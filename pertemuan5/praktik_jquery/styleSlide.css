@@ -1,0 +1,14 @@
+/* CSS untuk mengatur tampilan kotak2 dan flip */
+#kotak2,
+#flip {
+    padding: 5px; /* padding 5px di sekeliling konten */
+    text-align: center; /* align teks ke tengah */
+    background-color: #a7dbd8; /* warna latar belakang */
+    border: solid 2px #e0e4cc; /* border solid dengan ketebalan 2px */
+    border-radius: 5px; /* sudut bulat dengan radius 5px */
+}
+
+/* CSS tambahan untuk mengatur tampilan kotak2 */
+#kotak2 {
+    padding: 50px; /* padding 50px di sekeliling konten */
+}
