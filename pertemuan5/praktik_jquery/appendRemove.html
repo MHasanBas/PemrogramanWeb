@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Mengimpor stylesheet untuk mengatur tampilan tabel -->
+  <link rel="stylesheet" type="text/css" href="styleTable.css">
+  <!-- Mengimpor library jQuery -->
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Event handler saat tombol "Add Row" diklik
+      $(".add-row").click(function() {
+        // Mendapatkan nilai dari input name dan email
+        var name = $("#name").val();
+        var email = $("#email").val();
+        // Membuat markup untuk baris baru dalam tabel
+        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>";
+        // Menambahkan markup ke dalam tbody tabel
+        $("table tbody").append(markup);
+      });
+
+      // Event handler saat tombol "Delete Row" diklik
+      $(".delete-row").click(function() {
+        // Memeriksa setiap checkbox dalam tabel
+        $("table tbody").find('input[name="record"]').each(function() {
+          // Memeriksa apakah checkbox dicentang
+          if ($(this).is(":checked")) {
+            // Menghapus baris yang memiliki checkbox dicentang
+            $(this).parents("tr").remove();
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Form untuk menambahkan baris baru -->
+  <form>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="email" placeholder="Email Address">
+    <input type="button" class="add-row" value="Add Row">
+  </form>
+  <!-- Tabel untuk menampilkan data -->
+  <table>
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Baris tabel awal -->
+      <tr>
+        <td><input type="checkbox" name="record"></td>
+        <td>Tony Stark</td>
+        <td>tonystark@mail.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Tombol untuk menghapus baris -->
+  <button type="button" class="delete-row">Delete Row</button>
+</body>
+</html>

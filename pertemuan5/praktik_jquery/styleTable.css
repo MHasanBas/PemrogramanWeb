@@ -1,0 +1,27 @@
+/* CSS untuk mengatur margin pada elemen form */
+form {
+    margin: 20px;
+}
+
+/* CSS untuk mengatur padding pada elemen input dan button dalam form */
+form input, button {
+    padding: 5px;
+}
+
+/* CSS untuk mengatur tata letak dan margin pada elemen table */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+/* CSS untuk mengatur border pada header dan sel dalam table */
+table th, table td {
+    border: 1px solid #cdcdcd;
+}
+
+/* CSS untuk mengatur padding dan alignment pada header dan sel dalam table */
+table th, table td {
+    padding: 10px;
+    text-align: left;
+} 
