@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Mengimpor library jQuery UI -->
+  <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.js">
+  <!-- Mengimpor library jQuery -->
+  <script src="jquery-3.7.1.js"></script>
+  <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+  <script>
+    // Fungsi jQuery yang akan dieksekusi setelah dokumen siap
+    $ (function() {
+        // Menginisialisasi datepicker pada elemen input dengan ID "date_ex"
+        $ ("#date_ex" ).datepicker();
+    });
+    
+  </script>
+</head>
+<body>
+    <!-- Elemen untuk menampilkan input date -->
+    <div>Selected Date : <input type="text" id="date_ex"> </div>
+</body>
+</html>
