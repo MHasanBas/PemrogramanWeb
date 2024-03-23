@@ -1,0 +1,10 @@
+/* CSS untuk mengatur tampilan elemen dengan kelas "important" */
+.important {
+    font-weight: bold; /* Mengatur ketebalan font menjadi tebal */
+    font-size: xx-large; /* Mengatur ukuran font menjadi besar */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan kelas "blue" */
+.blue {
+    color: blue; /* Mengatur warna teks menjadi biru */
+}

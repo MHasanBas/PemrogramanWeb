@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Mengimpor stylesheet eksternal -->
+  <link rel="stylesheet" type="text/css" href="styleCSS.css">
+  <!-- Mengimpor library jQuery -->
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    // Fungsi jQuery yang akan dieksekusi setelah dokumen siap
+    $(document).ready(function() {
+      // Mengatur event handler ketika tombol dengan kelas "btn1" diklik untuk menambah kelas "blue" pada elemen h1, h2, p, dan kelas "important" pada elemen div
+      $(".btn1").click(function() {
+        $("h1, h2, p").addClass("blue");
+        $("div").addClass("important");
+      });
+
+      // Mengatur event handler ketika tombol dengan kelas "btn2" diklik untuk menghapus kelas "blue" dari elemen h1, h2, dan p
+      $(".btn2").click(function() {
+        $("h1, h2, p").removeClass("blue");
+      });
+
+      // Mengatur event handler ketika tombol dengan kelas "btn3" diklik untuk mengubah warna latar belakang dan ukuran font dari elemen h1, h2, p, dan div
+      $(".btn3").click(function() {
+        $("h1, h2, p, div").css({"background-color": "yellow", "font-size": "100%"});
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Heading dan paragraf -->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <!-- Elemen div untuk teks penting -->
+  <div>This is some important text!</div><br>
+
+  <!-- Tombol-tombol untuk mengendalikan efek-efek jQuery -->
+  <button class="btn1">Add classes to elements</button>
+  <button class="btn2">Remove classes from elements</button>
+  <button class="btn3">Set styles to elements</button>
+</body>
+</html>
