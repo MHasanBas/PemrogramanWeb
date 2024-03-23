@@ -1,0 +1,20 @@
+/* CSS untuk mengatur tampilan elemen dengan kelas "kotak" */
+.kotak {
+    width: 80px; /* lebar kotak */
+    height: 80px; /* tinggi kotak */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan ID "div1" */
+#div1 {
+    background-color: red; /* warna latar belakang merah */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan ID "div2" */
+#div2 {
+    background-color: green; /* warna latar belakang hijau */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan ID "div3" */
+#div3 {
+    background-color: blue; /* warna latar belakang biru */
+}
