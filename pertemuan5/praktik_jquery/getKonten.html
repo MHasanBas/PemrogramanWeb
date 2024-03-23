@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Event handler ketika tombol dengan ID "btn1" diklik untuk mendapatkan teks dari elemen dengan ID "test1"
+            $("#btn1").click(function () {
+                alert($("#test1").text()); // Menampilkan teks dari elemen dengan metode text()
+            });
+
+            // Event handler ketika tombol dengan ID "btn2" diklik untuk mendapatkan HTML dari elemen dengan ID "test2"
+            $("#btn2").click(function () {
+                alert($("#test2").html()); // Menampilkan HTML dari elemen dengan metode html()
+            });
+
+            // Event handler ketika tombol dengan ID "btn3" diklik untuk mendapatkan nilai dari elemen input dengan ID "test3"
+            $("#btn3").click(function () {
+                alert($("#test3").val()); // Menampilkan nilai dari elemen input dengan metode val()
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Elemen-elemen HTML -->
+    <p id="test1">This is the first paragraph.</p>
+    <p id="test2">This is <b>another</b> paragraph.</p>
+    <p>Your Name: <input type="text" id="test3"></p>
+
+    <!-- Tombol untuk mendapatkan teks, HTML, dan nilai input -->
+    <button id="btn1">Get Text</button>
+    <button id="btn2">Get HTML</button>
+    <button id="btn3">Get Value</button>
+</body>
+</html>
