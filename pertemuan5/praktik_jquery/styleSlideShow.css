@@ -1,0 +1,31 @@
+/* CSS untuk mengatur tampilan slider */
+#slider {
+    padding: 10px 0 10px; /* padding atas 10px, padding bawah 10px */
+    position: relative; /* posisi relatif untuk mengatur posisi elemen di dalamnya */
+    width: 300px; /* lebar slider */
+    height: 300px; /* tinggi slider */
+}
+
+/* CSS untuk mengatur tampilan gambar dalam slider */
+slider img {
+    width: 300px; /* lebar gambar */
+    height: 300px; /* tinggi gambar */
+    position: absolute; /* posisi absolut untuk menempatkan gambar di dalam slider */
+    -webkit-border-radius:5px 5px 5px 5px; /* sudut bulat gambar untuk browser Webkit */
+    border-radius: 5px; /* sudut bulat gambar */
+    -moz-border-radius:5px 5px 5px 5px; /* sudut bulat gambar untuk browser Mozilla */
+}
+
+/* CSS untuk mengatur tampilan judul slider */
+.slidertitle {
+    width: 280px; /* lebar judul */
+    margin-top: 265px; /* jarak judul dari atas slider */
+    text-align: center; /* align judul ke tengah */
+    position: absolute; /* posisi absolut untuk menempatkan judul di dalam slider */
+    padding: 10px; /* padding judul */
+    -webkit-border-radius:0px 0px 5px 5px; /* sudut bulat judul untuk browser Webkit */
+    border-radius:0px 0px 5px 5px ; /* sudut bulat judul */
+    -moz-border-radius:5px 5px 5px 5px; /* sudut bulat judul untuk browser Mozilla */
+    color: #fff; /* warna teks judul */
+    background-color: rgba(12, 22, 23, 0, 50); /* warna latar belakang judul dengan opacity */
+}

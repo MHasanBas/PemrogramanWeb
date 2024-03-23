@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Mengimpor stylesheet eksternal -->
+  <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+  <!-- Mengimpor library jQuery -->
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    var i = 0;
+
+    $(document).ready(function() {
+      // Sembunyikan judul dan gambar slider saat halaman dimuat
+      $('.slidertitle, #slider img').hide();
+      // Memanggil fungsi showNextImage untuk menampilkan gambar selanjutnya secara berurutan setiap 3 detik
+      showNextImage();
+      setInterval(showNextImage, 3000);
+    });
+
+    function showNextImage() {
+      i++;
+      // Memilih gambar berikutnya dengan ID dinamis dan menerapkannya efek fade in, delay, dan fade out
+      $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+      // Memilih judul berikutnya dengan ID dinamis dan menerapkannya efek fade in, delay, dan fade out
+      $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+      // Jika sudah mencapai gambar terakhir, kembalikan variabel i ke 0 untuk mengulangi dari awal
+      if (i == 3) {
+        i = 0;
+      }
+    };
+  </script>
+</head>
+<body>
+  <div id="slider">
+    <!-- Gambar-gambar slider -->
+    <img id="sliderImage1" src="img/gambar1.jpeg">
+    <div class="slidertitle" id="title1">Gambar1</div>
+
+    <img id="sliderImage2" src="img/gambar2.jpeg">
+    <div class="slidertitle" id="title2">Gambar2</div>
+
+    <img id="sliderImage3" src="img/gambar3.jpg">
+    <div class="slidertitle" id="title3">Gambar3</div>
+  </div>
+</body>
+</html>
