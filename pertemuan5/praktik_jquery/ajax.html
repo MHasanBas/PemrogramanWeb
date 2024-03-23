@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Mengimpor library jQuery -->
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Ketika dokumen sudah siap, tambahkan event handler untuk tombol yang diklik
+      $("button").click(function() {
+        // Menggunakan metode load() dari jQuery untuk memuat konten dari file test-content.html ke dalam elemen dengan ID "box"
+        $("#box").load("test-content.html");
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="box">
+  <h2>Klik tombol di bawah untuk menampilkan konten</h2>
+</div>
+<!-- Tombol yang akan memicu pemanggilan konten -->
+<button type="button">Klik Saya!</button>
+</body>
+</html>
