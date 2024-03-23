@@ -1,0 +1,18 @@
+/* Mengatur tampilan tabel */
+table {
+    border-collapse: collapse; /* Menggabungkan batas sel */
+    border-spacing: 0; /* Jarak antara sel */
+    width: 100%; /* Lebar tabel */
+    border: 1px solid #ddd; /* Batas tabel */
+}
+
+/* Mengatur tampilan sel header dan sel data */
+th, td {
+    text-align: left; /* Penjajaran teks ke kiri */
+    padding: 16px; /* Ruang di dalam sel */
+}
+
+/* Mengatur latar belakang setiap baris genap */
+tr:nth-child(even){
+    background-color: #f2f2f2; /* Warna latar belakang baris genap */
+}
