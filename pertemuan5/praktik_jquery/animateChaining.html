@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mengimpor stylesheet untuk mengatur tampilan animasi -->
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css"/>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event handler saat tombol diklik
+            $("button").click(function() {
+                // Memulai animasi pada elemen dengan kelas "box"
+                $(".box")
+                    .animate({width: "300px"})     // Mengubah lebar menjadi 300px
+                    .animate({height: "300px"})    // Mengubah tinggi menjadi 300px
+                    .animate({marginLeft: "150px"})// Mengubah margin kiri menjadi 150px
+                    .animate({borderWidth: "10px"})// Mengubah ketebalan border menjadi 10px
+                    .animate({opacity: 0.5});      // Mengubah opacity menjadi 0.5
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Tombol untuk memulai animasi -->
+    <button type="button">Start Animation</button>
+    <!-- Elemen yang akan mengalami animasi -->
+    <div class="box"></div>
+</body>
+</html>

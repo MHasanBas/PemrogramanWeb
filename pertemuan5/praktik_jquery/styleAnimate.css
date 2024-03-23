@@ -1,0 +1,10 @@
+/* CSS untuk mengatur tampilan kotak dengan kelas "box" */
+.box {
+    width: 100px; /* lebar kotak */
+    height: 100px; /* tinggi kotak */
+    background: #9d7ede; /* warna latar belakang kotak */
+    margin-top: 30px; /* jarak atas kotak dari elemen di atasnya */
+    border-style: solid; /* jenis border solid */
+    border-color: #6f40ce; /* warna border kotak */
+    position: relative; /* posisi relatif untuk pengaturan posisi anak-anak */
+}

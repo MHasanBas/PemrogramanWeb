@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mengimpor stylesheet untuk mengatur tampilan animasi -->
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css"/>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event handler saat tombol diklik
+            $("button").click(function() {
+                // Memulai animasi untuk menggeser elemen ke kiri sejauh 300px
+                $("div").animate({left: '300px'});
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Tombol untuk memulai animasi -->
+    <button type="button">Start Animation</button>
+    <!-- Elemen yang akan mengalami animasi -->
+    <div class="box"></div>
+</body>
+</html>
