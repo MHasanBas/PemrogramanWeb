@@ -10,4 +10,8 @@ $usia = @$_GET['usia'];
 echo "Halo {$nama}! Apakah benar Anda berusia {$usia} tahun?";
 ?>
 
+<<<<<<< HEAD
 // code dari variabelget
+=======
+// code dari variabelget
+>>>>>>> c336d02523c00bc78343fd17c62c459c4383e899
