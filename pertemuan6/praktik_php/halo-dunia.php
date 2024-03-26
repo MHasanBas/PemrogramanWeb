@@ -9,3 +9,5 @@ $usia = @$_GET['usia'];
 // Menampilkan pesan sapaan dengan menggunakan variabel $nama dan $usia
 echo "Halo {$nama}! Apakah benar Anda berusia {$usia} tahun?";
 ?>
+
+// code dari variabelget
