@@ -9,11 +9,10 @@
     <?php
     // Mendefinisikan array $Listdosen yang berisi nama-nama dosen
     $Listdosen = ["Elok Nur Hamdana", "Unggul Pamenang", "Bagas Nugraha"];
-
-    // Menampilkan elemen array dengan indeks tertentu
-    echo $Listdosen[2] . "<br>"; // Menampilkan nama dosen indeks ke-2
-    echo $Listdosen[0] . "<br>"; // Menampilkan nama dosen indeks ke-0
-    echo $Listdosen[1] . "<br>"; // Menampilkan nama dosen indeks ke-1
+ // Menampilkan seluruh elemen array dengan menggunakan foreach loop
+    foreach ($Listdosen as $dosen) {
+        echo $dosen . "<br>";
+    }
     ?>
 </body>
 
