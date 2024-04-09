@@ -1,0 +1,61 @@
+/* Styles untuk container formulir unggahan */
+.upload-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Styles untuk judul formulir */
+.upload-form-container h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styles untuk container input file */
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Styles untuk input file */
+.file-input {
+    display: none;
+}
+
+/* Styles untuk label input file */
+.file-label {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px; /* Tentukan nilai border-radius */
+    cursor: pointer;
+}
+
+/* Styles untuk tombol unggah */
+.upload-button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Tentukan nilai border-radius */
+    cursor: pointer;
+    opacity: 0.5; /* Opacity untuk membuatnya terlihat memudar */
+}
+
+/* Styles untuk tombol unggah saat dinonaktifkan */
+.upload-button:disabled {
+    background: #ccc; /* Ubah warna saat dinonaktifkan */
+    cursor: not-allowed; /* Ubah gaya kursor saat dinonaktifkan */
+}
+
+/* Styles untuk status unggahan */
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
