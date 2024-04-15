@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(45, 211, 208);
+}
+
+.verify-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.verify-container h1 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.verify-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verify-form .input-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.verify-form label {
+  color: #333;
+  font-weight: 500;
+}
+
+.verify-form input {
+  width: calc(100% - 30px);
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.verify-form button {
+  width: calc(100% - 30px);
+  height: 45px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgb(10, 127, 150);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verify-form button:hover {
+  background-color: rgb(11, 133, 155);
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-box.checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input-box.checkbox label {
+  color: #333;
+  font-size: 14px;
+}
+
