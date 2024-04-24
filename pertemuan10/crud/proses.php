@@ -20,5 +20,24 @@ if($aksi == 'tambah') { // Jika aksi adalah tambah
     }
 
     mysqli_close($koneksi); // Menutup koneksi database
+} elseif($aksi == 'ubah'){ // Jika aksi adalah ubah
+    if (isset($_POST['id'])) { // Memeriksa apakah ID telah diterima dari form
+        $id = $_POST['id']; // Mendapatkan nilai ID dari form
+
+        // Query untuk mengupdate data anggota berdasarkan ID
+        $query = "UPDATE anggota SET nama='$nama', jenis_kelamin='$jenis_kelamin', alamat='$alamat', no_telp='$no_telp' WHERE id=$id";
+
+        // Menjalankan query dan mengecek apakah berhasil atau tidak
+        if (mysqli_query($koneksi, $query)) {
+            header("Location: index.php"); // Jika berhasil, redirect ke halaman index.php
+            exit();
+        } else {
+            echo "Gagal mengupdate data: " . mysqli_error($koneksi); // Jika gagal, tampilkan pesan error
+        }
+    } else {
+        echo "ID tidak valid."; // Jika ID tidak diterima, tampilkan pesan
+    }
+
+    mysqli_close($koneksi); // Menutup koneksi database
 }
 ?>
