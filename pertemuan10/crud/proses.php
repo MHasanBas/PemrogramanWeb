@@ -39,5 +39,26 @@ if($aksi == 'tambah') { // Jika aksi adalah tambah
     }
 
     mysqli_close($koneksi); // Menutup koneksi database
+} elseif($aksi == 'hapus') { // Jika aksi adalah hapus
+    if (isset($_GET['id'])) { // Memeriksa apakah ID telah diterima dari URL
+        $id = $_GET['id']; // Mendapatkan nilai ID dari URL
+
+        // Query untuk menghapus data anggota berdasarkan ID
+        $query = "DELETE FROM anggota WHERE id=$id";
+
+        // Menjalankan query dan mengecek apakah berhasil atau tidak
+        if (mysqli_query($koneksi, $query)) {
+            header("Location: index.php"); // Jika berhasil, redirect ke halaman index.php
+            exit();
+        } else {
+            echo "Gagal menghapus data: " . mysqli_error($koneksi); // Jika gagal, tampilkan pesan error
+        }
+    } else {
+        echo "ID tidak valid."; // Jika ID tidak diterima, tampilkan pesan
+    }
+
+    mysqli_close($koneksi); // Menutup koneksi database
+} else { // Jika aksi tidak dikenali
+    header("Location: index.php"); // Redirect ke halaman index.php
 }
 ?>
