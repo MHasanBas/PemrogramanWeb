@@ -1,0 +1,116 @@
+/* Gaya umum untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Gaya untuk kontainer */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+/* Gaya untuk judul level 2 */
+h2 {
+    text-align: center;
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Gaya untuk sel-sel tabel, baik untuk header maupun isi */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Gaya untuk sel header tabel */
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Gaya untuk sel header tabel */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Gaya untuk tombol tambah */
+.btn-tambah {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Gaya untuk tombol tambah saat dihover */
+.btn-tambah:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk form */
+form {
+    margin-top: 20px;
+}
+
+/* Gaya untuk label dalam form */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Gaya untuk input teks dalam form */
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Gaya untuk grup radio button dalam form */
+.radio-group label {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Gaya untuk radio button dalam form */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Gaya untuk tombol submit dan tombol kembali */
+button[type="submit"],
+.btn-kembali {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya untuk tombol submit dan tombol kembali saat dihover */
+button[type="submit"]:hover,
+.btn-kembali:hover {
+    background-color: #45a049;
+}
+
+/* Gaya khusus untuk tombol kembali */
+.btn-kembali {
+    background-color: #e74c3c;
+}
