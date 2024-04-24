@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag untuk mengatur karakter set dan tampilan responsif -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Judul halaman -->
+    <title>Pengenalan Bootstrap</title>
+     <!-- Tambahkan Bootsrap -->
+    <link rel="stylesheet" href="css/Bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Judul untuk pengaturan gambar -->
+        <h2>Pengaturan Gambar pada Bootstrap</h2>
+        <!-- Baris untuk menempatkan gambar -->
+        <div class="row row-cols-1">
+            <!-- Kolom untuk gambar pertama dengan kelas "rounded" untuk membuat sudut gambar menjadi melengkung -->
+            <div class="col">
+                <img src="tower.jpg" class="rounded" alt="gambar round">
+            </div>
+            <!-- Kolom untuk gambar kedua dengan kelas "rounded-circle" untuk membuat gambar menjadi lingkaran -->
+            <div class="col">
+                <img src="tower.jpg" class="rounded-circle" alt="gambar circle">
+            </div>
+            <!-- Kolom untuk gambar ketiga dengan kelas "img-thumbnail" untuk membuat gambar menjadi thumbnail -->
+            <div class="col">
+                <img src="tower.jpg" class="img-thumbnail" alt="gambar thumbnail">
+            </div>
+            <!-- Kolom untuk gambar keempat dengan kelas "img-fluid" untuk membuat gambar responsif -->
+            <div class="col">
+                <img src="tower.jpg" class="img-fluid" alt="gambar fluid">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
